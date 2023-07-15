@@ -1,12 +1,12 @@
 *** Settings ***
 Library  SeleniumLibrary
-Suite Setup    Set Selenium Speed    0.5s
+Suite Setup       Set Selenium Speed    0.5s
 Suite Teardown    Close All Browsers
-Test Setup    Open Website
-Test Teardown    Close Browser
+Test Setup        Open Website
+Test Teardown     Close Browser
 
 *** Variables ***
-${url}    https://codenboxautomationlab.com/practice/
+${url}        https://codenboxautomationlab.com/practice/
 ${browser}    chrome
 
 ${locator_radiobutton1}    xpath=//*[@id="radio-btn-example"]/fieldset/label[1]/input
